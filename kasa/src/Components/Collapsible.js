@@ -1,6 +1,6 @@
 import { useState } from "react";
 import arrow from '../Images/arrowRight.svg'
-
+// En utilisant usestate et la fonction fléchée toggle, la class de la div change et son contenu apparait grâ à une animation css. 
 const Collapsible = (props) => {
     const [open, setOpen] = useState(false);
     const toggle = () => {

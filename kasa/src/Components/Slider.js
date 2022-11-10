@@ -1,7 +1,7 @@
 import { useState } from "react"
 import arrowRight from '../Images/arrowRight.svg'
 import arrowLeft from '../Images/arrowLeft.svg'
-
+// 
 function ImageSlider({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0)
     const goToPrevious = () => {

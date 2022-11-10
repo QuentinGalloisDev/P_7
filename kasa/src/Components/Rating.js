@@ -1,6 +1,6 @@
 
 function Rating({ rating, starColor, classname }) {
-    //On créer un tableau avec un nombre de clés suivant la valeur de rating 
+    //On créer un tableau avec un nombre de clés suivant la valeur de rating et une valeur égale à l'index.
     const star = Array.apply(null, { length: rating }).map(Number.call, Number)
     return (
         <div className={classname}>
