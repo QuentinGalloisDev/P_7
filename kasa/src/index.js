@@ -1,7 +1,7 @@
 
 import reportWebVitals from './reportWebVitals';
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom'
 import {
   BrowserRouter as Router,
   Route,
@@ -14,10 +14,7 @@ import Error from './Pages/Error';
 import Footer from './Components/Footer';
 import FicheLogement from './Pages/Fiche_logement'
 
-const body = document.getElementById('root');
-const root = ReactDOM.createRoot(body);
-
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <div className='container'>
       <Router>
@@ -39,7 +36,7 @@ root.render(
       </Router>
     </div>
     <Footer />
-  </React.StrictMode>
+  </React.StrictMode>, document.getElementById("root")
 )
 
 

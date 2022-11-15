@@ -18,11 +18,21 @@
 }
 
 .arrow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.arrow-visible {
     margin: 10px;
 }
 
-.arrow:hover {
+.arrow-visible:hover {
     cursor: pointer;
+}
+
+.arrow-hide {
+    opacity: 0;
 }
 
 h1 {
@@ -49,7 +59,7 @@ p {
 }
 
 .D_Fiche_logement .title {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 }
@@ -66,6 +76,8 @@ p {
 
 .host img {
     border-radius: 50%;
+    width: 65px;
+    height: 65px;
 }
 
 .D_Fiche_logement .tags {
@@ -77,13 +89,15 @@ p {
     margin-right: 25px;
     background-color: #FF6060;
     color: #FFFFFF;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
+    font-size: 14px;
 }
 
 .D_Fiche_logement .details {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .D_Fiche_logement .details button {
@@ -112,6 +126,10 @@ p {
     line-height: 26px;
 }
 
+.D_Fiche_logement .content .equipements p {
+    line-height: 11px;
+}
+
 .details .content .tags p {
     display: flex;
     flex-direction: column;
@@ -123,7 +141,10 @@ p {
 
 .notes {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin: 10px;
+    width: 25%;
+
 }
 
 .rating {
@@ -135,12 +156,12 @@ p {
 .rating .starColored,
 .rating .starGrey {
     position: absolute;
-    left: 100px;
+    left: 23px;
     top: 150px;
     display: flex;
 }
 
-@media all and (max-width: 830px) {
+@media all and (max-width: 904px) {
     .arrow img {
         width: 22px;
         height: 34px;

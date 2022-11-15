@@ -21,7 +21,7 @@
 }
 
 .error h2 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -35,19 +35,16 @@
 }
 
 .error a {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
-    /* identical to box height, or 26px */
-
     text-decoration-line: underline;
-
     color: #FF6060;
 }
 
-@media all and (max-width: 830px) {
+@media all and (max-width: 904px) {
 
     .error h1 {
         font-size: 96px;
