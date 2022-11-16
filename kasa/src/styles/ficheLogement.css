@@ -176,6 +176,14 @@ p {
         flex-direction: column;
     }
 
+    .D_Fiche_logement .description h1 {
+        font-size: 18px;
+    }
+
+    .D_Fiche_logement .description p {
+        font-size: 14px;
+    }
+
     .D_Fiche_logement .description .tags {
         order: 2;
     }
