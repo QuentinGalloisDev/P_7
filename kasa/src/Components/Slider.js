@@ -16,8 +16,8 @@ function ImageSlider({ images }) {
         setCurrentIndex(newIndex)
     }
 
-    // On utilise usestate pour changer la classe des arrow.
-    const [open, setOpen] = useState(false);
+    // On utilise open pour changer la classe des arrow.
+    const open = true;
 
     return (
         <div>
@@ -25,8 +25,8 @@ function ImageSlider({ images }) {
                 {/* Si la longueur du tableau des images est plus long que 1 alors on affiche les flèches */}
                 {images.length > 1 ? (
                     <div className="arrow">
-                        <div onClick={goToPrevious} className={open ? "arrow-hide" : "arrow-visible"} > <img src={arrowLeft} alt="Fléche vers la photo précédente" ></img></div>
-                        <div onClick={goToNext} className={open ? "arrow-hide" : "arrow-visible"}> <img src={arrowRight} alt="Fléche vers la photo suivante" ></img></div>
+                        <div onClick={goToPrevious} className={open ? "arrow-visible" : "arrow-hide"} > <img src={arrowLeft} alt="Fléche vers la photo précédente" ></img></div>
+                        <div onClick={goToNext} className={open ? "arrow-visible" : "arrow-hide"}> <img src={arrowRight} alt="Fléche vers la photo suivante" ></img></div>
                     </div>
                 )
 
