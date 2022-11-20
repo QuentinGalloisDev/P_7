@@ -82,7 +82,7 @@ p {
 
 .D_Fiche_logement .tags {
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 .D_Fiche_logement .tags p {
@@ -240,6 +240,7 @@ p {
 
     .D_Fiche_logement .tags p {
         font-size: 10px;
+        height: fit-content;
     }
 
     .host p {
