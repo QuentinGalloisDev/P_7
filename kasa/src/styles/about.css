@@ -150,6 +150,11 @@ nav a:hover {
         width: 100%;
     }
 
+    .content p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
     .D_About section {
         background-image: url('../Images/BackgroundAboutMobile.png');
         background-position: 0% 90%;
