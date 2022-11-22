@@ -5,6 +5,7 @@ import arrowLeft from '../Images/arrowLeft.svg'
 
 function ImageSlider({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0)
+    //L'image se met à jour à l'appel des fonctions.
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0
         const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
@@ -16,17 +17,14 @@ function ImageSlider({ images }) {
         setCurrentIndex(newIndex)
     }
 
-    // On utilise open pour changer la classe des arrow.
-    const open = true;
-
     return (
         <div>
             <div className="slider" style={{ backgroundImage: `url(${images[currentIndex]})` }}>
                 {/* Si la longueur du tableau des images est plus long que 1 alors on affiche les flèches */}
                 {images.length > 1 ? (
                     <div className="arrow">
-                        <div onClick={goToPrevious} className={open ? "arrow-visible" : "arrow-hide"} > <img src={arrowLeft} alt="Fléche vers la photo précédente" ></img></div>
-                        <div onClick={goToNext} className={open ? "arrow-visible" : "arrow-hide"}> <img src={arrowRight} alt="Fléche vers la photo suivante" ></img></div>
+                        <div onClick={goToPrevious} className="arrow-visible" > <img src={arrowLeft} alt="Fléche vers la photo précédente" ></img></div>
+                        <div onClick={goToNext} className="arrow-visible" > <img src={arrowRight} alt="Fléche vers la photo suivante" ></img></div>
                     </div>
                 )
 
@@ -35,11 +33,6 @@ function ImageSlider({ images }) {
             </div>
         </div>
     )
-
-
-
-
-
 }
 
 export default ImageSlider
